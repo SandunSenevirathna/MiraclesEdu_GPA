@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubjectActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <EditText
+                android:id="@+id/txtSubjectCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/darkblue_border"
+                android:hint="Subject Code"
+                android:paddingStart="30dp"
+                android:padding="10dp"
+                android:textColor="#2B2B2B" />
+            <EditText
+                android:id="@+id/txtSubjectName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/darkblue_border"
+                android:hint="Subject Name"
+                android:paddingStart="30dp"
+                android:padding="10dp"
+                android:textColor="#2B2B2B" />
+            <EditText
+                android:id="@+id/txtSubjectMarkse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/darkblue_border"
+                android:hint="Subject Marks"
+                android:inputType="text"
+                android:paddingStart="30dp"
+                android:padding="10dp"
+                android:textColor="#2B2B2B" />
+            <EditText
+                android:id="@+id/txtCreditValue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/darkblue_border"
+                android:hint="Credit Value"
+                android:inputType="number"
+                android:paddingStart="30dp"
+                android:padding="10dp"
+                android:textColor="#2B2B2B" />
+
+
+            <Button
+                android:id="@+id/btnInsertSubject"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:text="Insert"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue_700"
+                android:textSize="18sp"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
